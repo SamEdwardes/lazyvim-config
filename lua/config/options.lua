@@ -11,8 +11,6 @@ vim.g.lazyvim_python_ruff = "ruff"
 -- Picker
 vim.g.lazyvim_picker = "telescope"
 
--- Disable concearling for markdown files
--- vim.g.conceallevel = 0
--- vim.opt.conceallevel = 0
--- vim.opt_local.conceallevel = 0
--- vim.wo.conceallevel = 0
+-- Disable concealing by default
+-- https://github.com/LazyVim/LazyVim/discussions/269
+vim.wo.conceallevel = 0

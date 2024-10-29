@@ -2,6 +2,9 @@ return {
   {
     "MeanderingProgrammer/render-markdown.nvim",
     enabled = true,
+    keys = {
+      { "<leader>or", "<cmd>RenderMarkdown toggle<cr>", desc = "Toggle Render Markdown" },
+    },
     opts = {
       -- Don't render by default
       enabled = false,
