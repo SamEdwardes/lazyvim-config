@@ -6,6 +6,7 @@ return {
         {
           mode = { "n" },
           { "<leader>o", group = "obsidian" },
+          { "<leader>t", group = "tasks" },
         },
       },
     },
