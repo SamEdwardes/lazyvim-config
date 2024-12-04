@@ -12,6 +12,38 @@ vim.keymap.set("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 vim.keymap.set("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 vim.keymap.set("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
+-- Disable the built in pane navigtion
+-- Move to window using the <ctrl> hjkl keys
+vim.keymap.del("n", "<C-h>")
+vim.keymap.del("n", "<C-j>")
+vim.keymap.del("n", "<C-k>")
+vim.keymap.del("n", "<C-l>")
+-- Resize window using <ctrl> arrow keys
+vim.keymap.del("n", "<C-Up>")
+vim.keymap.del("n", "<C-Down>")
+vim.keymap.del("n", "<C-Left>")
+vim.keymap.del("n", "<C-Right>")
+
+-- recommended mappings
+-- resizing splits
+-- these keymaps will also accept a range,
+-- for example `10<A-h>` will `resize_left` by `(10 * config.default_amount)`
+vim.keymap.set("n", "<C-Left>", require("smart-splits").resize_left)
+vim.keymap.set("n", "<C-Down>", require("smart-splits").resize_down)
+vim.keymap.set("n", "<C-Up>", require("smart-splits").resize_up)
+vim.keymap.set("n", "<C-Right>", require("smart-splits").resize_right)
+-- moving between splits
+vim.keymap.set("n", "<C-h>", require("smart-splits").move_cursor_left)
+vim.keymap.set("n", "<C-j>", require("smart-splits").move_cursor_down)
+vim.keymap.set("n", "<C-k>", require("smart-splits").move_cursor_up)
+vim.keymap.set("n", "<C-l>", require("smart-splits").move_cursor_right)
+-- vim.keymap.set('n', '<C-\\>', require('smart-splits').move_cursor_previous)
+-- swapping buffers between windows
+-- vim.keymap.set('n', '<leader><leader>h', require('smart-splits').swap_buf_left)
+-- vim.keymap.set('n', '<leader><leader>j', require('smart-splits').swap_buf_down)
+-- vim.keymap.set('n', '<leader><leader>k', require('smart-splits').swap_buf_up)
+-- vim.keymap.set('n', '<leader><leader>l', require('smart-splits').swap_buf_right)
+
 -- Set some VS Code only keymaps
 if vim.g.vscode then
   -- VSCode extension
