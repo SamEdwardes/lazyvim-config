@@ -2,6 +2,14 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+-- Moving up and down
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true, desc = "Remap page down to move cursor to middle" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Remap page up to move cursor to middle" })
+
+-- Searching
+vim.keymap.set("n", "n", "nzzzv", { noremap = true, desc = "When searching move selection to middle" })
+vim.keymap.set("n", "N", "Nzzzv", { noremap = true, desc = "When searching move selection to middle" })
+
 -- tabs
 vim.keymap.set("n", "<leader><tab>l", "<cmd>tablast<cr>", { desc = "Last Tab" })
 vim.keymap.set("n", "<leader><tab>o", "<cmd>tabonly<cr>", { desc = "Close Other Tabs" })
