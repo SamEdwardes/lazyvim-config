@@ -1,0 +1,95 @@
+{
+  "Markdown Table": {
+    "prefix": "table",
+    "body": [
+      "| ${1:col1}         | ${2:col2}         |",
+      "| ------------ | ------------ |",
+      "|              |              |",
+      "|              |              |",
+      "|              |              |",
+      "$0"
+    ],
+    "description": "SE all - Insert a simple table"
+  },
+  "Section Divider": {
+    "prefix": [
+      "# ---",
+      "// ---",
+      "---",
+      "comment",
+      "section"
+    ],
+    "body": [
+      "$LINE_COMMENT ------------------------------------------------------------------------------"
+    ],
+    "description": "SE all - Insert a divider that is 80 characters in length"
+  },
+  "Section Divider with Title": {
+    "prefix": [
+      "# ---",
+      "// ---",
+      "comment",
+      "section",
+      "title"
+    ],
+    "body": [
+      "$LINE_COMMENT ------------------------------------------------------------------------------",
+      "$LINE_COMMENT ${1:title}",
+      "$LINE_COMMENT ------------------------------------------------------------------------------",
+      "$0"
+    ],
+    "description": "SE all - Insert two dividers that is 80 characters in length with a title between them."
+  },
+  "heredoc": {
+    "prefix": [
+      "cat",
+      "heredoc"
+    ],
+    "body": [
+      "cat <<EOF > ${1:file}",
+      "$0",
+      "EOF"
+    ],
+    "description": "SE all - Create a heredoc template for shell scripts."
+  },
+  "sudo heredoc": {
+    "prefix": [
+      "cat",
+      "tee",
+      "sudo tee",
+      "heredoc"
+    ],
+    "body": [
+      "sudo tee -a ${1:file} <<EOF",
+      "$0",
+      "EOF"
+    ],
+    "description": "SE all - Create a heredoc template for shell scripts with sudo."
+  },
+  "Supbase init": {
+    "prefix": [
+      "supabase",
+      "database"
+    ],
+    "description": "SE all - Set up Supabase in Nuxt",
+    "body": [
+      "import { Database } from '@/types/supabase'",
+      "",
+      "const client = useSupabaseClient<Database>()"
+    ]
+  },
+  "Supabase query": {
+    "prefix": [
+      "supabase",
+      "query"
+    ],
+    "description": "SE all - Query Supabase",
+    "body": [
+      "const { data: ${1:key} } = await useAsyncData('${1:key}', async () => {",
+      "  const { data } = await client.from('${2:table}').select(`*`)",
+      "  console.log({data: data})",
+      "  return data",
+      "})$0"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "HTML comment": {
+    "prefix": "dj.comment.html",
+    "body": [
+      "<!-- $1 -->"
+    ],
+    "description": "SE htmldjango - Insert an HTML comment"
+  }
+}

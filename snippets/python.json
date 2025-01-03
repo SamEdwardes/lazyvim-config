@@ -1,0 +1,34 @@
+{
+  "hello world": {
+    "prefix": "hello world",
+    "description": "SE python - hello world",
+    "scope": "python",
+    "body": [
+      "print(\"hello world\")"
+    ]
+  },
+  "Pandas column and row display setting": {
+    "prefix": "pd.options.display",
+    "body": [
+      "pd.options.display.max_rows = 999",
+      "pd.options.display.max_columns = 999"
+    ],
+    "description": "SE python - Set the max columns and rows for pandas."
+  },
+  "Write string to text file": {
+    "prefix": "with open",
+    "body": [
+      "with open($1, 'w') as f:",
+      "    f.write('abcdefg')"
+    ],
+    "description": "SE python - Write a string to a text file."
+  },
+  "if __name__ == '__main__':": {
+    "prefix": "if __name__",
+    "body": [
+      "if __name__ == '__main__':",
+      "    main()"
+    ],
+    "description": "SE python - if __name__ == '__main__' pattern"
+  }
+}
