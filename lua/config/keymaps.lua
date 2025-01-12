@@ -20,6 +20,9 @@ vim.keymap.set("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 vim.keymap.set("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 vim.keymap.set("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
+-- windows
+vim.keymap.set("n", "<leader>wr", "<C-W>r", { desc = "Rotate Window" })
+
 -- Set some VS Code only keymaps
 if vim.g.vscode then
   -- VSCode extension
