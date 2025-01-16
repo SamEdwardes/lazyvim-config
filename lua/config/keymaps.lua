@@ -11,17 +11,24 @@ vim.keymap.set("n", "n", "nzzzv", { noremap = true, desc = "When searching move 
 vim.keymap.set("n", "N", "Nzzzv", { noremap = true, desc = "When searching move selection to middle" })
 
 -- tabs
-vim.keymap.set("n", "<leader><tab>l", "<cmd>tablast<cr>", { desc = "Last Tab" })
+vim.keymap.set("n", "<leader><tab>L", "<cmd>tablast<cr>", { desc = "Last Tab" })
 vim.keymap.set("n", "<leader><tab>o", "<cmd>tabonly<cr>", { desc = "Close Other Tabs" })
 vim.keymap.set("n", "<leader><tab>f", "<cmd>tabfirst<cr>", { desc = "First Tab" })
 vim.keymap.set("n", "<leader><tab>n", "<cmd>tabnew<cr>", { desc = "New Tab" })
-vim.keymap.set("n", "<leader><tab><tab>", "<cmd>tabnext<cr>", { desc = "New Tab" })
+vim.keymap.set("n", "<leader><tab><tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
+vim.keymap.set("n", "<leader><tab>l", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 vim.keymap.set("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 vim.keymap.set("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 vim.keymap.set("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+vim.keymap.set("n", "<leader><tab>h", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+vim.keymap.set("n", "<leader><tab>s", "<cmd>FzfLua tabs<cr>", { desc = "Tabs Picker" })
+vim.keymap.set("n", "<leader>f<tab>", "<cmd>FzfLua tabs<cr>", { desc = "Tabs Picker" })
 
 -- windows
 vim.keymap.set("n", "<leader>wr", "<C-W>r", { desc = "Rotate Window" })
+
+-- Fuzzyfinder
+vim.keymap.set("n", "<leader>sp", "<cmd>FzfLua builtin<cr>", { desc = "Find buildin fzf-lua pickers" })
 
 -- Set some VS Code only keymaps
 if vim.g.vscode then
@@ -43,9 +50,21 @@ if vim.g.vscode then
     vscode.action("workbench.action.showAllEditors")
   end)
 
+  -- Find and replace
+  vim.keymap.set({ "n", "v" }, "<leader>sr", function()
+    -- Open the search section in the sidebar
+    vscode.action("workbench.action.findInFiles", {
+      args = {
+        query = vim.fn.expand("<cword>"),
+        replace = vim.fn.expand("<cword>"),
+      },
+    })
+  end)
+
   -- Find in files
   vim.keymap.set({ "n" }, "<leader>sg", function()
-    vscode.action("workbench.action.findInFiles")
+    -- Open the command pallet with %
+    vscode.action("workbench.action.quickTextSearch")
   end)
 
   -- Code actions ================================================================
