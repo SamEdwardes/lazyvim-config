@@ -30,6 +30,11 @@ vim.keymap.set("n", "<leader>wr", "<C-W>r", { desc = "Rotate Window" })
 -- Fuzzyfinder
 vim.keymap.set("n", "<leader>sp", "<cmd>FzfLua builtin<cr>", { desc = "Find buildin fzf-lua pickers" })
 
+-- Logging
+
+-- ------------------------------------------------------------------------------
+-- VS Code Stuff
+-- ------------------------------------------------------------------------------
 -- Set some VS Code only keymaps
 if vim.g.vscode then
   -- VSCode extension
