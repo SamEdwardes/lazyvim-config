@@ -60,5 +60,6 @@
   "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" },
   "wrapwidth": { "branch": "main", "commit": "c592b47c6665e004f508b8ca01ec1fcf07493cbe" },
-  "yanky.nvim": { "branch": "main", "commit": "98b9c21d3c06d79f68fd9d471dcc28fc6d2d72ef" }
+  "yanky.nvim": { "branch": "main", "commit": "98b9c21d3c06d79f68fd9d471dcc28fc6d2d72ef" },
+  "yazi.nvim": { "branch": "main", "commit": "50446f185d8b97b225d47852813f0e415cd70689" }
 }
