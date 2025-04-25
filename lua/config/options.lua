@@ -3,6 +3,7 @@
 -- Add any additional options here
 vim.g.lazyvim_picker = "fzf"
 vim.g.lazyvim_explorer = "snacks"
+vim.g.lazyvim_cmp = "blink.cmp"
 
 -- Disable concealing by default
 -- https://github.com/LazyVim/LazyVim/discussions/269

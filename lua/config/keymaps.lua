@@ -2,6 +2,11 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+-- Delete some defaults from LazyVim
+-- Delete explorer defaults
+vim.keymap.del("n", "<leader>e")
+vim.keymap.del("n", "<leader>E")
+
 -- Moving up and down
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true, desc = "Remap page down to move cursor to middle" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Remap page up to move cursor to middle" })
@@ -29,8 +34,6 @@ vim.keymap.set("n", "<leader>wr", "<C-W>r", { desc = "Rotate Window" })
 
 -- Fuzzyfinder
 vim.keymap.set("n", "<leader>sp", "<cmd>FzfLua builtin<cr>", { desc = "Find buildin fzf-lua pickers" })
-
--- Logging
 
 -- ------------------------------------------------------------------------------
 -- VS Code Stuff
