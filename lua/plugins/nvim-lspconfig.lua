@@ -3,6 +3,7 @@ return {
   ---@class PluginLspOpts
   opts = {
     ---@type lspconfig.options
+    inlay_hints = { enabled = false },
     servers = {
       -- Django Template LSP: https://github.com/fourdigits/django-template-lsp
       djlsp = {},
