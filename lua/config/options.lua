@@ -14,6 +14,9 @@ vim.wo.conceallevel = 0
 -- https://github.com/LazyVim/LazyVim/discussions/5519
 vim.g.root_spec = { { ".git", "lua" }, "lsp", "cwd" }
 
+-- Python
+vim.g.lazyvim_python_lsp = "basedpyright"
+
 -- Custom options when in VS Code
 if vim.g.vscode then
   print("I am in VS Code!")

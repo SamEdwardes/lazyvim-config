@@ -35,6 +35,9 @@ vim.keymap.set("n", "<leader>wr", "<C-W>r", { desc = "Rotate Window" })
 -- Fuzzyfinder
 vim.keymap.set("n", "<leader>sp", "<cmd>FzfLua builtin<cr>", { desc = "Find buildin fzf-lua pickers" })
 
+-- Code
+vim.keymap.set("n", "<leader>ci", "<cmd>PyrightIgnore<cr>", { desc = "Add pyright ignore comment" })
+
 -- ------------------------------------------------------------------------------
 -- VS Code Stuff
 -- ------------------------------------------------------------------------------
