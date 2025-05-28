@@ -1,5 +1,6 @@
 return {
   "ibhagwan/fzf-lua",
+  enabled = false,
   opts = function(_, opts)
     local config = require("fzf-lua.config")
     local actions = require("fzf-lua.actions")
