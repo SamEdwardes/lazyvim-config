@@ -42,11 +42,13 @@ return {
     "folke/snacks.nvim",
     ---@type snacks.Config
     keys = {
-      "<leader>sp",
-      function()
-        Snacks.picker()
-      end,
-      desc = "Find builtin Snacks pickers",
+      {
+        "<leader>sp",
+        function()
+          Snacks.picker()
+        end,
+        desc = "Find builtin Snacks pickers",
+      },
     },
     opts = {
       picker = {
