@@ -5,5 +5,12 @@
       "<!-- $1 -->"
     ],
     "description": "SE htmldjango - Insert an HTML comment"
+  },
+  "Django Tag": {
+    "prefix": "dj.tag",
+    "body": [
+      "{% $1 %}"
+    ],
+    "description": "SE htmldjango - Insert a Django tag"
   }
 }
