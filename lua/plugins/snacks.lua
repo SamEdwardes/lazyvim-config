@@ -52,6 +52,10 @@ return {
     },
     opts = {
       picker = {
+        matcher = {
+          history_bonus = true,
+          frecency = true,
+        },
         win = {
           -- input window
           input = {
