@@ -7,7 +7,9 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
+-- ============================================================================
 -- Disable spell check on markdown by default
+-- ============================================================================
 -- https://github.com/LazyVim/LazyVim/discussions/392
 vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
@@ -23,7 +25,9 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- ============================================================================
 -- Ignore current line for basedpyright
+-- ============================================================================
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
     local client = vim.lsp.get_client_by_id(args.data.client_id)
@@ -72,5 +76,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
         vim.api.nvim_buf_set_lines(0, row, row + 1, false, { line })
       end, { desc = "Add pyright ignore comment for current line" })
     end
+  end,
+})
+
+-- ============================================================================
+-- Print variable under cursor
+-- ============================================================================
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    vim.api.nvim_buf_create_user_command(args.buf, "PrintVariableUnderCursor", function() end, { desc = "" })
   end,
 })

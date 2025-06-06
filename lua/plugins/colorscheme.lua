@@ -2,18 +2,28 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "eldritch",
     },
   },
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   name = "tokyonight",
-  --   opts = {
-  --     dim_inactive = true,
-  --   },
-  -- },
+  {
+    "eldritch-theme/eldritch.nvim",
+    enabled = true,
+    name = "eldritch",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  {
+    "folke/tokyonight.nvim",
+    enabled = false,
+    name = "tokyonight",
+    opts = {
+      dim_inactive = true,
+    },
+  },
   {
     "catppuccin/nvim",
+    enabled = false,
     name = "catppuccin",
     opts = {
       transparent_background = true,
