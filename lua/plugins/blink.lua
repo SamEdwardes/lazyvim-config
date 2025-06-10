@@ -1,5 +1,25 @@
 return {
   "saghen/blink.cmp",
+  keys = {
+    {
+      "<leader>uB",
+      function()
+        -- At startup, it will be nil
+        if vim.b.completion == nil then
+          vim.b.completion = true
+        end
+        -- Toggle the current value
+        vim.b.completion = not vim.b.completion
+        -- Sent notification
+        if vim.b.completion then
+          vim.notify("Blink completions toggled on.")
+        else
+          vim.notify("Blink completions toggled off.")
+        end
+      end,
+      desc = "Toggle blink completions",
+    },
+  },
   opts = {
     cmdline = {
       enabled = true,
