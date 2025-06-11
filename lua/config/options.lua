@@ -4,6 +4,7 @@
 vim.g.lazyvim_picker = "snacks"
 vim.g.lazyvim_explorer = "snacks"
 vim.g.lazyvim_cmp = "blink.cmp"
+vim.g.ai_cmp = false
 
 -- Disable concealing by default
 -- https://github.com/LazyVim/LazyVim/discussions/269

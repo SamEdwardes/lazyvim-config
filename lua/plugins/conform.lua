@@ -6,6 +6,9 @@ return {
         "djlint",
         "djhtml",
       },
+      html = {
+        "prettier",
+      },
     },
     formatters = {
       djhtml = {
