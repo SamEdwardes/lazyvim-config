@@ -10,7 +10,7 @@ return {
       default = { "lsp", "path", "snippets", "buffer", "copilot" },
       providers = {
         lsp = {
-          fallbakcs = { "buffer" },
+          fallbacks = { "buffer" },
         },
         copilot = {
           name = "copilot",
