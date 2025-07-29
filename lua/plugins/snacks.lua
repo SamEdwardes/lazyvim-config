@@ -16,27 +16,6 @@ return {
       },
     },
   },
-  -- Explorer
-  {
-    "folke/snacks.nvim",
-    ---@type snacks.Config
-    keys = {
-      {
-        "<leader>ee",
-        function()
-          Snacks.explorer({ cwd = LazyVim.root() })
-        end,
-        desc = "Explorer Snacks (root dir)",
-      },
-      {
-        "<leader>eE",
-        function()
-          Snacks.explorer()
-        end,
-        desc = "Explorer Snacks (cwd)",
-      },
-    },
-  },
   -- Picker
   {
     "folke/snacks.nvim",
