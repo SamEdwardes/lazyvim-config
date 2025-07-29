@@ -2,12 +2,12 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "eldritch",
+      colorscheme = "catppuccin",
     },
   },
   {
     "eldritch-theme/eldritch.nvim",
-    enabled = true,
+    enabled = false,
     name = "eldritch",
     lazy = false,
     priority = 1000,
@@ -23,7 +23,7 @@ return {
   },
   {
     "catppuccin/nvim",
-    enabled = false,
+    enabled = true,
     name = "catppuccin",
     opts = {
       transparent_background = true,
