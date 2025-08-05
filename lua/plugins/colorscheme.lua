@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "tokyonight",
     },
   },
   {
@@ -15,7 +15,7 @@ return {
   },
   {
     "folke/tokyonight.nvim",
-    enabled = false,
+    enabled = true,
     name = "tokyonight",
     opts = {
       dim_inactive = true,
@@ -23,7 +23,7 @@ return {
   },
   {
     "catppuccin/nvim",
-    enabled = true,
+    enabled = false,
     name = "catppuccin",
     opts = {
       transparent_background = true,
