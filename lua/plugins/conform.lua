@@ -9,6 +9,9 @@ return {
       html = {
         "prettier",
       },
+      astro = {
+        "prettierd",
+      },
     },
     formatters = {
       djhtml = {
