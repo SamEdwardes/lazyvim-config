@@ -3,8 +3,7 @@ return {
     "zbirenbaum/copilot.lua",
     opts = {
       suggestion = {
-        auto_trigger = false,
-        -- Note this doesn't really work well when I have ghost text disabled in blink
+        auto_trigger = true,
         keymap = {
           next = "<C-0>",
           prev = "<C-9>",
