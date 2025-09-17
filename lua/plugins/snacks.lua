@@ -72,6 +72,12 @@ return {
             { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
             { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
             {
+              icon = " ",
+              key = "p",
+              desc = "Projects",
+              action = "<leader>sP",
+            },
+            {
               icon = " ",
               key = "c",
               desc = "Nvim Config",
@@ -111,6 +117,15 @@ return {
     "folke/snacks.nvim",
     ---@type snacks.Config
     keys = {
+      -- Override projects
+      {
+        "<leader>sP",
+        function()
+          Snacks.dashboard.pick("projects", { dev = { "~/projects/personal", "~/projects/posit" } })
+        end,
+        desc = "Find builtin Snacks pickers",
+      },
+      -- Find all pickers:lua Snacks.dashboard.pick('projects', { dev = { '~/projects/personal', '~/projects/posit' } })
       {
         "<leader>sp",
         function()
