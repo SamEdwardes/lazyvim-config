@@ -1,18 +1,18 @@
 return {
   {
-    "echasnovski/mini.ai",
+    "nvim-mini/mini.ai",
     vscode = true,
   },
   {
-    "echasnovski/mini.comment",
+    "nvim-mini/mini.comment",
     vscode = true,
   },
   {
-    "echasnovski/mini.move",
+    "nvim-mini/mini.move",
     vscode = true,
   },
   {
-    "echasnovski/mini.pairs",
+    "nvim-mini/mini.pairs",
     vscode = true,
     opts = {
       modes = { insert = true, command = true, terminal = true },
@@ -30,7 +30,7 @@ return {
     },
   },
   {
-    "echasnovski/mini.surround",
+    "nvim-mini/mini.surround",
     vscode = true,
   },
 }
