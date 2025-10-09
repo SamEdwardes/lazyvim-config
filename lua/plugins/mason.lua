@@ -5,6 +5,8 @@ return {
       "django-template-lsp",
       "emmet-language-server",
       "prettier",
+      "markdownlint-cli2",
+      "markdown-toc"
     },
   },
 }

@@ -6,6 +6,8 @@ return {
     servers = {
       -- Django Template LSP: https://github.com/fourdigits/django-template-lsp
       djlsp = {},
+      -- Markdown
+      marksman = {},
     },
   },
 }
