@@ -28,13 +28,13 @@ return {
   opts = {
     workspaces = {
       {
-        name = "iCloud Vault",
-        path = "/Users/samedwardes/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCloud Vault",
+        name = "second-brain",
+        path = "~/Documents/obsidian/second-brain",
       },
     },
-    new_notes_location = "01 Inbox",
+    new_notes_location = "00_Inbox",
     templates = {
-      folder = "Templates",
+      folder = "06_Metadata/Templates",
     },
   },
 }
