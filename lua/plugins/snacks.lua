@@ -117,6 +117,16 @@ return {
     "folke/snacks.nvim",
     ---@type snacks.Config
     keys = {
+      { "<leader><space>", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
+      { "<leader>ff", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
+      { "<leader>fF", LazyVim.pick("files"), desc = "Find Files (Root Dir)" },
+      {
+        "<leader><leader>",
+        function()
+          Snacks.dashboard.pick("files", { cwd = vim.loop.cwd() })
+        end,
+        desc = "Find files in cwd",
+      },
       -- Override projects
       {
         "<leader>sP",
