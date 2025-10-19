@@ -16,7 +16,8 @@ vim.wo.conceallevel = 0
 vim.g.root_spec = { { ".git", "lua" }, "lsp", "cwd" }
 
 -- Python
-vim.g.lazyvim_python_lsp = "basedpyright"
+-- vim.g.lazyvim_python_lsp = "basedpyright"
+vim.g.lazyvim_python_lsp = "pyrefly"
 
 -- Custom options when in VS Code
 if vim.g.vscode then
