@@ -5,7 +5,7 @@ return {
   },
   opts = {
     win = {
-      position = "right",
+      position = "bottom",
     },
     preview = {
       type = "main",
