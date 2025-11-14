@@ -16,16 +16,7 @@ return {
       {
         "<leader>,",
         function()
-          Snacks.picker.buffers({
-            format = function(item, _)
-              local filename = vim.fn.fnamemodify(item.file, ":t")
-              local dir = vim.fn.fnamemodify(item.file, ":.:h") -- relative to home
-              return {
-                { dir .. "/", "Comment" },
-                { filename, "SnacksPickerFile" },
-              }
-            end,
-          })
+          Snacks.picker.buffers({ format = "file" })
         end,
         desc = "Buffers",
       },
