@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:github.com)",
-      "Bash(fd:*)"
+      "Bash(fd:*)",
+      "Bash(git -C /Users/samedwardes/.config/nvim log --oneline --all -20)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []
