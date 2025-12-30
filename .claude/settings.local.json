@@ -4,7 +4,8 @@
       "WebFetch(domain:github.com)",
       "Bash(fd:*)",
       "Bash(git -C /Users/samedwardes/.config/nvim log --oneline --all -20)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(grep:*)"
     ],
     "deny": [],
     "ask": []
