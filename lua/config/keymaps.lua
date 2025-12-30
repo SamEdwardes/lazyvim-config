@@ -7,10 +7,6 @@
 vim.keymap.del("n", "<leader>e")
 vim.keymap.del("n", "<leader>E")
 
--- Moving up and down
-vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true, desc = "Remap page down to move cursor to middle" })
-vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Remap page up to move cursor to middle" })
-
 -- Searching
 vim.keymap.set("n", "n", "nzzzv", { noremap = true, desc = "When searching move selection to middle" })
 vim.keymap.set("n", "N", "Nzzzv", { noremap = true, desc = "When searching move selection to middle" })
