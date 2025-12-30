@@ -19,6 +19,10 @@ vim.g.root_spec = { { ".git", "lua" }, "lsp", "cwd" }
 -- vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.lazyvim_python_lsp = "pyrefly"
 
+-- Wrapping lines
+vim.opt.textwidth = 80 -- Wrap at 80 characters
+vim.opt.linebreak = true -- Break at word boundaries (don't split words)
+
 -- Custom options when in VS Code
 if vim.g.vscode then
   print("I am in VS Code!")
