@@ -1,3 +1,5 @@
+---@module 'snacks'
+
 -- Vendored in from:
 -- https://github.com/LazyVim/LazyVim/blob/25abbf546d564dc484cf903804661ba12de45507/lua/lazyvim/plugins/extras/util/chezmoi.lua#L1
 local pick_chezmoi = function()
