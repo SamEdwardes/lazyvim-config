@@ -23,7 +23,7 @@ return {
           end,
           color = { fg = "#ff6b6b" },
         },
-        { LazyVim.lualine.pretty_path() },
+        { LazyVim.lualine.pretty_path({ length = 256 }) },
       },
     },
   },
