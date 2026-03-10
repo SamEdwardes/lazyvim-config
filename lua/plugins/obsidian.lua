@@ -26,6 +26,7 @@ return {
     { "<leader>od", "<cmd>ObsidianToggleCheckbox<cr>", desc = "Toggle Checkbox" },
   },
   opts = {
+    disable_frontmatter = true,
     workspaces = {
       {
         name = "second-brain",
