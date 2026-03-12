@@ -1,4 +1,4 @@
 return {
-  "ggandor/leap.nvim",
-  vscode = false
+  url = "https://codeberg.org/andyg/leap.nvim",
+  vscode = false,
 }
