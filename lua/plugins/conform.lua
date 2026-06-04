@@ -9,6 +9,9 @@ return {
       html = {
         "prettier",
       },
+      json = {
+        "prettier",
+      },
       astro = {
         "prettierd",
       },
