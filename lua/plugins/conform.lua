@@ -18,7 +18,7 @@ return {
       css = {
         "prettierd",
       },
-      ["markdown"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
+      ["markdown"] = { "rumdl", "markdownlint-cli2", "markdown-toc" },
       ["markdown.mdx"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
     },
     formatters = {
